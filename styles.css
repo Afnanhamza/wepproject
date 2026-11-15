@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+    font-family:"Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #0d0815 0%,
+        #1b1029 45%,
+        #301744 75%,
+        #100a19 100%
+    );
+
+    color: white;
+   
+}
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 2rem auto;
+padding: 0 0.5rem;
+max-width:  1200px;
+
+
+}
+
+.navpar ul{
+display: flex;
+list-style-type: none;
+gap: 30px;
+align-items: center;
+
+}
+.logo{
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navpar a {
+
+    text-decoration: none;
+    color: #f3eaff;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+display: inline-block;
+padding: 10px 15px;
+border-radius: 12px;
+}
+.navpar a:hover,
+.navpar a:focus {
+    color: white;
+    background: rgba(197, 154, 255, 0.2);
+    box-shadow: 0 0 10px rgba(197, 154, 255, 0.3);
+}
+hr{
+    opacity:10%;
+}
+.hero{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+margin: 5rem auto;
+padding: 30px 50px;
+max-width:  1200px; 
+
+
+}
+.herosub {
+    width: 50%;
+    min-width: 0;
+}
+
+.hero img {
+    width: 40%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+.name {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 24px;
+    color: #c9a0f5;
+    margin-bottom: 20px;
+}
+
+.personal {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #dddddd;
+}
+.name span {
+    color: #c9a0f5;
+}
+.personal {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #dddddd;
+}
+.aboutme{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: center;
+margin: 5rem auto;
+max-width: 1100px;
+gap: 40px;
+padding: 30px ;
+
+}
+.textcont{
+flex: 1;
+min-width: 0;
+max-width: 550px;
+
+}
+
+.about-img{
+    width: 420px;
+    max-width: 45%;
+    height: auto;
+
+    flex-shrink: 0;
+    border-radius: 25px;
+mask-image: radial-gradient(ellipse 70% 65% at center, black 65%, transparent 100%);
+-webkit-mask-image: radial-gradient(ellipse 70% 65% at center, black 65%, transparent 100%);
+}
+.aboutmepra{
+font-size: 16px;
+line-height: 1.8;
+color: #dddddd;
+max-width: 550px;
+font-weight: 400;
+
+}
+.about span {
+    color :#c59aff;
+}
+/* My Skills */
+
+.skills {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.skills h2 span {
+    color: #c9a0f5;
+}
+
+.skills-intro {
+    color: #dddddd;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-card {
+    background: rgba(197, 154, 255, 0.1);
+    border: 1px solid #8e65b5;
+    border-radius: 18px;
+    padding: 30px 25px;
+    width: 200px;
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+    min-height: 180px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background: rgba(197, 154, 255, 0.25);
+    border-color: #c9a0f5;
+}
+.skill-icon {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 17px;
+    margin: 0;
+}
+.education {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.education h2 span {
+    color: #c9a0f5;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education th,
+.education td {
+    padding: 18px;
+    border: 1px solid #a985eb;
+    color: white;
+}
+
+.education th {
+    background: rgba(169, 133, 235, 0.3);
+}
+
+.education tr:hover {
+    background: rgba(169, 133, 235, 0.15);
+}
+.education-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.contact {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact h2 span {
+    color: #c9a0f5;
+}
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #a985eb;
+    border-radius: 12px;
+    background: rgba(197, 154, 255, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #c9b9db;
+}
+
+.contact-form button {
+    padding: 15px;
+    background: #a985eb;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #8654cc;
+    transform: translateY(-5px);
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    box-sizing: border-box;
+}
+.hobbies {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.hobbies h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hobbies h2 span {
+    color: #c9a0f5;
+}
+
+.hobbies p {
+    margin-bottom: 35px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.hobby-card {
+    width: 180px;
+    padding: 30px 20px;
+    border: 1px solid #a985eb;
+    border-radius: 18px;
+    background: rgba(197, 154, 255, 0.1);
+    transition: 0.3s;
+}
+
+.hobby-card span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hobby-card h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    background: rgba(197, 154, 255, 0.25);
+}
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #8054b8;
+    color: white;
+    border: 1px solid #c9a0f5;
+    border-radius: 50%;
+
+    font-size: 22px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+
+.back-to-top:hover {
+    background: #8654cc;
+    transform: translateY(-5px);
+}/* Responsive Design for Mobile */
+
+@media (max-width: 600px) {
+
+    /* General */
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Navigation Bar */
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .navpar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navpar a {
+        font-size: 12px;
+    }
+
+    /* Home */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .herosub {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .personal {
+        font-size: 14px;
+    }
+
+    .hero img {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    /* About Me */
+    .aboutme {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .textcont {
+        width: 100%;
+    }
+
+    .about-img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .aboutmepra {
+        font-size: 14px;
+    }
+
+    /* Education */
+    .education {
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    .education h2 {
+        font-size: 28px;
+    }
+
+    .education table {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .education th,
+    .education td {
+        padding: 8px 4px;
+        overflow-wrap: anywhere;
+    }
+
+    /* My Skills */
+    .skills {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .skills h2 {
+        font-size: 28px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* My Hobbies */
+    .hobbies {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .hobbies h2 {
+        font-size: 28px;
+    }
+
+    .hobbies-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Contact Me */
+    .contact {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+    }
+
+    /* Back to Top */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 20px;
+    }
+}
